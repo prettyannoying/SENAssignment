@@ -13,7 +13,6 @@ public class Connect{
 			//String url2="jdbc:postgresql://localhost:5432/postgres?searchpath=kuchbhi";
 			c=DriverManager.getConnection(url,"postgres","sen");
 		} catch (Exception e) {
-			// TODO: handle exception
 			System.out.println(e.getMessage());
 		}
 		return c;
