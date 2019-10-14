@@ -10,7 +10,6 @@ public class Connect{
 		try {
 			Class.forName("org.postgresql.Driver").newInstance();
 			String url="jdbc:postgresql://localhost:5432/postgres?searchpath=advertising";
-			//String url2="jdbc:postgresql://localhost:5432/postgres?searchpath=kuchbhi";
 			c=DriverManager.getConnection(url,"postgres","sen");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
