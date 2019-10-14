@@ -16,7 +16,6 @@ import java.util.ArrayList;
 				c=DriverManager.getConnection(url,"postgres","sen");
 			} 
 			catch (Exception e) {
-	   // TODO: handle exception
 				System.out.println(e.getMessage());
 			}
 			return c;
@@ -64,7 +63,6 @@ import java.util.ArrayList;
 		   {
 		    e.printStackTrace();
 		   }
-		   //System.out.println("kuch to dikha de"); awwle chotu
 		  }
 		  else{
 		   System.out.println(":'(");
@@ -116,9 +114,8 @@ import java.util.ArrayList;
 	      		  			}
 	      		  		}
 	      		  		catch (Exception e) {
-							// TODO: handle exception
 	      		  			e.printStackTrace();
-						}
+					}
 	      		  	}
 	            	break;
 	            case 4:
@@ -147,10 +144,8 @@ import java.util.ArrayList;
 	     }
 	}
 	
-	static void filterAds()
-    {
-     // price filter
-     //the price range should be of written in this "1234-1245" format
+static void filterAds(){
+     
      System.out.println("Enter the price range");
      String range = sc.next();
      String[] rn = range.split("-");
@@ -166,7 +161,7 @@ import java.util.ArrayList;
     }
 
 	
-	static void displayads(lastest l1){
+static void displayads(lastest l1){
      int id = l1.getID(); 
      String adname = l1.getadName();  
      String owner = l1.getownerName(); 
